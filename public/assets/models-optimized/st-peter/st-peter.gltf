@@ -1,0 +1,636 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v4.5.0",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5126,
+      "count": 251,
+      "max": [
+        10
+      ],
+      "min": [
+        0
+      ],
+      "normalized": false,
+      "byteOffset": 0,
+      "bufferView": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 251,
+      "normalized": false,
+      "byteOffset": 0,
+      "bufferView": 1
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 251,
+      "normalized": false,
+      "byteOffset": 3012,
+      "bufferView": 1
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 251,
+      "normalized": false,
+      "byteOffset": 6024,
+      "bufferView": 1
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5122,
+      "count": 251,
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 2
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5122,
+      "count": 251,
+      "normalized": true,
+      "byteOffset": 2008,
+      "bufferView": 2
+    },
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 159834,
+      "normalized": false,
+      "byteOffset": 0,
+      "bufferView": 3
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 63737,
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 4
+    },
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 2880,
+      "normalized": false,
+      "byteOffset": 319668,
+      "bufferView": 3
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 559,
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 5
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 63737,
+      "max": [
+        16522,
+        10793,
+        32767
+      ],
+      "min": [
+        -16522,
+        -10793,
+        -32767
+      ],
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 6
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 63737,
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 7
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 559,
+      "max": [
+        32767,
+        32767,
+        32767
+      ],
+      "min": [
+        -32767,
+        -32767,
+        -32767
+      ],
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 8
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 559,
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 9
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 1,
+      "byteOffset": 0,
+      "byteLength": 1004,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 0,
+          "byteLength": 703,
+          "mode": "ATTRIBUTES",
+          "byteStride": 4,
+          "count": 251
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 1004,
+      "byteLength": 9036,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 704,
+          "byteLength": 2074,
+          "mode": "ATTRIBUTES",
+          "filter": "EXPONENTIAL",
+          "byteStride": 12,
+          "count": 753
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 10040,
+      "byteLength": 4016,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 2780,
+          "byteLength": 2448,
+          "mode": "ATTRIBUTES",
+          "filter": "QUATERNION",
+          "byteStride": 8,
+          "count": 502
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 14056,
+      "byteLength": 325428,
+      "target": 34963,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 5228,
+          "byteLength": 56324,
+          "mode": "TRIANGLES",
+          "byteStride": 2,
+          "count": 162714
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 339484,
+      "byteLength": 254948,
+      "target": 34962,
+      "byteStride": 4,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 61552,
+          "byteLength": 60612,
+          "mode": "ATTRIBUTES",
+          "filter": "OCTAHEDRAL",
+          "byteStride": 4,
+          "count": 63737
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 594432,
+      "byteLength": 2236,
+      "target": 34962,
+      "byteStride": 4,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 122164,
+          "byteLength": 1111,
+          "mode": "ATTRIBUTES",
+          "filter": "OCTAHEDRAL",
+          "byteStride": 4,
+          "count": 559
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 596668,
+      "byteLength": 509896,
+      "target": 34962,
+      "byteStride": 8,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 123276,
+          "byteLength": 221681,
+          "mode": "ATTRIBUTES",
+          "byteStride": 8,
+          "count": 63737
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 1106564,
+      "byteLength": 254948,
+      "target": 34962,
+      "byteStride": 4,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 344960,
+          "byteLength": 164403,
+          "mode": "ATTRIBUTES",
+          "byteStride": 4,
+          "count": 63737
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 1361512,
+      "byteLength": 4472,
+      "target": 34962,
+      "byteStride": 8,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 509364,
+          "byteLength": 3025,
+          "mode": "ATTRIBUTES",
+          "byteStride": 8,
+          "count": 559
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 1365984,
+      "byteLength": 2236,
+      "target": 34962,
+      "byteStride": 4,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 512392,
+          "byteLength": 1295,
+          "mode": "ATTRIBUTES",
+          "byteStride": 4,
+          "count": 559
+        }
+      }
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "source": 0,
+      "sampler": 0
+    }
+  ],
+  "images": [
+    {
+      "name": "background",
+      "mimeType": "image/png",
+      "uri": "baseColor.png"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "00-copy.bin",
+      "byteLength": 513688
+    },
+    {
+      "byteLength": 1368220,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "fallback": true
+        }
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "st-peter",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "roughnessFactor": 0.5,
+        "metallicFactor": 0
+      }
+    },
+    {
+      "name": "background",
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 0
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "st-peter",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 7,
+            "POSITION": 10,
+            "TEXCOORD_0": 11
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 6
+        }
+      ]
+    },
+    {
+      "name": "background",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 12,
+            "TEXCOORD_0": 13
+          },
+          "mode": 4,
+          "material": 1,
+          "indices": 8
+        }
+      ]
+    }
+  ],
+  "cameras": [
+    {
+      "name": "cam",
+      "type": "perspective",
+      "perspective": {
+        "znear": 0.10000000149011612,
+        "zfar": 1000,
+        "yfov": 0.8335472981766701,
+        "aspectRatio": 1.6941176470588235
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "name": "cam-target",
+      "translation": [
+        0,
+        1.8074102401733398,
+        5.147366046905518
+      ]
+    },
+    {
+      "name": "light-main",
+      "translation": [
+        3.7870497703552246,
+        1.8225138187408447,
+        7.107792854309082
+      ],
+      "rotation": [
+        -0.7071068286895752,
+        0,
+        0,
+        0.7071068286895752
+      ],
+      "extensions": {
+        "KHR_lights_punctual": {
+          "light": 0
+        }
+      }
+    },
+    {
+      "name": "cam",
+      "rotation": [
+        -0.7071068286895752,
+        0,
+        0,
+        0.7071068286895752
+      ],
+      "camera": 0
+    },
+    {
+      "name": "cam-tilt",
+      "rotation": [
+        0.7288508415222168,
+        0,
+        0,
+        0.6846725344657898
+      ],
+      "children": [
+        2
+      ]
+    },
+    {
+      "name": "cam-group",
+      "translation": [
+        0,
+        1.5335183143615723,
+        9.524791717529297
+      ],
+      "children": [
+        3
+      ]
+    },
+    {
+      "name": "st-peter",
+      "translation": [
+        0.00004076957702636719,
+        2.5109376944601536,
+        0.4751167297363281
+      ],
+      "scale": [
+        7.656985282897949,
+        7.656985282897949,
+        7.656985282897949
+      ],
+      "mesh": 0
+    },
+    {
+      "name": "background",
+      "scale": [
+        25,
+        25,
+        25
+      ],
+      "mesh": 1
+    }
+  ],
+  "animations": [
+    {
+      "name": "cam-target-anim",
+      "samplers": [
+        {
+          "input": 0,
+          "output": 1,
+          "interpolation": "LINEAR"
+        }
+      ],
+      "channels": [
+        {
+          "sampler": 0,
+          "target": {
+            "node": 0,
+            "path": "translation"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-main-anim",
+      "samplers": [
+        {
+          "input": 0,
+          "output": 2,
+          "interpolation": "LINEAR"
+        }
+      ],
+      "channels": [
+        {
+          "sampler": 0,
+          "target": {
+            "node": 1,
+            "path": "translation"
+          }
+        }
+      ]
+    },
+    {
+      "name": "cam-group-anim",
+      "samplers": [
+        {
+          "input": 0,
+          "output": 3,
+          "interpolation": "LINEAR"
+        }
+      ],
+      "channels": [
+        {
+          "sampler": 0,
+          "target": {
+            "node": 4,
+            "path": "translation"
+          }
+        }
+      ]
+    },
+    {
+      "name": "cam-tilt",
+      "samplers": [
+        {
+          "input": 0,
+          "output": 4,
+          "interpolation": "LINEAR"
+        }
+      ],
+      "channels": [
+        {
+          "sampler": 0,
+          "target": {
+            "node": 3,
+            "path": "rotation"
+          }
+        }
+      ]
+    },
+    {
+      "name": "cam-anim",
+      "samplers": [
+        {
+          "input": 0,
+          "output": 5,
+          "interpolation": "LINEAR"
+        }
+      ],
+      "channels": [
+        {
+          "sampler": 0,
+          "target": {
+            "node": 2,
+            "path": "rotation"
+          }
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0,
+        1,
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "EXT_meshopt_compression",
+    "KHR_lights_punctual",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "EXT_meshopt_compression",
+    "KHR_lights_punctual",
+    "KHR_mesh_quantization"
+  ],
+  "extensions": {
+    "KHR_lights_punctual": {
+      "lights": [
+        {
+          "name": "light-main-anim",
+          "type": "point",
+          "intensity": 54351.41306588226
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "michelangelus-clone",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Faithful 1:1 static mirror of michelangelus.studiogusto.com (Next.js Pages Router + Turbopack, Three.js/WebGL)",
+  "scripts": {
+    "dev": "node server.mjs public 4300",
+    "start": "node server.mjs public 4300"
+  }
+}

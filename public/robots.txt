@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Disallow: /wp
+
+# Host
+Host: https://michelangelus.studiogusto.com
+
+# Sitemaps
+Sitemap: https://michelangelus.studiogusto.com/sitemap_index.xml

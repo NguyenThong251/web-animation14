@@ -1,0 +1,50 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+env:
+  BASE: /web-animation14
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # public/ is a static MIRROR of a Next.js Pages-Router build (Turbopack)
+      # captured from michelangelus.studiogusto.com. It was compiled with
+      # basePath "" for the domain root, so every same-origin reference is
+      # root-absolute (/_next/…, /assets/…, /images/…, /videos/…) and the client
+      # router has basePath "" baked in. Pages serves the ARTIFACT ROOT at the
+      # /web-animation14 subpath, so scripts/subpath.py copies public/ → _site/
+      # and rebases the HTML attrs, __NEXT_DATA__ (+ assetPrefix), the
+      # _next/data page props, the Turbopack chunk base, the router's basePath
+      # helpers and the WebGL asset literals. Each patch asserts its match count.
+      - name: Build site (rebase root-absolute paths onto the subpath)
+        run: python3 scripts/subpath.py "$BASE" _site
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
