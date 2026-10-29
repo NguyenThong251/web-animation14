@@ -85,6 +85,21 @@ patch(app, '"/assets/', f'"{BASE}/assets/', 13)
 patch(app, '"/_next/static/immutable/media/', f'"{BASE}/_next/static/immutable/media/', 7)
 patch(app, "`/favicon-frames/", f"`{BASE}/favicon-frames/", 1)
 
+# The origin 308-redirects "/route/" to "/route"; Pages would 404 it (no route/index.html).
+# Emit a tiny redirect page at route/index.html for every non-home page to keep those URLs working.
+for page in sorted(OUT.glob("*.html")):
+    if page.stem in ("index", "404"):
+        continue
+    target = f"{BASE}/{page.stem}"
+    stub = OUT / page.stem / "index.html"
+    stub.parent.mkdir(exist_ok=True)
+    stub.write_text(
+        '<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex">'
+        f'<link rel="canonical" href="{target}"><meta http-equiv="refresh" content="0; url={target}">'
+        f'<script>location.replace("{target}" + location.search + location.hash)</script>'
+        f'<a href="{target}">{target}</a>\n'
+    )
+
 # nothing root-absolute may survive in the pages' attributes
 for page in OUT.glob("*.html"):
     left = re.findall(r'\b(?:href|src)="/(?!/)[^"]*"', page.read_text())
